@@ -1,4 +1,5 @@
 // loginUser.js
+import currentUrl from "./getCurrentURL.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   const token = localStorage.getItem("token");

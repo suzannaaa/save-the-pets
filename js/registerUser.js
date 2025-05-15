@@ -1,4 +1,5 @@
 // registerUser.js
+import currentUrl from "./getCurrentURL.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   const signupForm = document.getElementById("signupForm");

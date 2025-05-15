@@ -1,4 +1,5 @@
 // showAllPets.js
+import currentUrl from "./getCurrentURL.js";
 
 const callback = (responseStatus, responseData) => {
   console.log("responseStatus:", responseStatus);

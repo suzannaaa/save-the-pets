@@ -1,4 +1,5 @@
 // displayPoints.js
+import currentUrl from "./getCurrentURL.js";
 
 function displayPoints() {
   const displayPointscallback = (responseStatus, responseData) => {

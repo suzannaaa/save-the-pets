@@ -1,4 +1,5 @@
 // showMyMessages.js
+import currentUrl from "./getCurrentURL.js";
 
 function fetchMessages() {
     console.log("Fetching messages...");
