@@ -1,0 +1,198 @@
+body
+{
+    font-family:'Franklin Gothic Medium';
+    background-color: #f8dffa;
+}
+
+.navbar-brand img
+{
+    max-height: 55px;
+    width: 70px;
+}
+
+main
+{
+    min-height: calc(100vh - 56px - 56px);
+}
+
+nav
+{
+	background-color: #f8dffa;
+}
+
+.nav-link 
+{
+	color: #6f046c;
+    font-size: 16px;
+}
+
+.nav-link:hover
+{
+	background-color: #de8ff2;
+    border-radius: 5px;
+}
+
+.index
+{
+  background-color: #f8abff;
+  color: #4a0248;
+  border-radius: 10px;
+}
+
+.joingame
+{
+    padding: 50px;
+    background-color: #f8abff;
+    border-radius: 10px;
+}
+
+.task
+{
+    padding: 10px;
+    color: #6f046c;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#taskListContainer 
+{
+  background-color: #6e3672;
+  border-radius: 10px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.login
+{
+    padding: 50px;
+    background-color: #f8abff;
+    border-radius: 10px;
+}
+
+#loginForm .btn:hover 
+{
+  background-color: #370035;
+  color: white;
+  border-radius: 5px;
+}
+
+.container
+{
+  position: relative;
+}
+
+#addButton
+{
+  position: fixed;
+  bottom: 80px;
+  right: 50px;
+  font-size: 50px;
+  border: none;
+  background-color: #6f046c;
+  opacity: 70%;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.popup
+{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 400px;
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.popup textarea
+{
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  height: 240px;
+  overflow-y: auto;
+  resize: none;
+}
+
+.popup-header,
+.popup-footer
+{
+  text-align: right;
+}
+
+.popup-footer
+{
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.submit-btn
+{
+  background-color: #6f046c;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-btn:hover
+{
+  background-color: #4a0248;
+  border-radius: 5px;
+}
+
+.close-btn
+{
+  background-color: #fff;
+  color: black;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.close-btn:hover
+{
+  background-color: lightgray;
+  border-radius: 5px;
+}
+
+footer
+{
+	background-color: #f8abff;
+}
+
+footer p
+{
+    color: #6e3672;
+}
+
+.btn
+{
+    color: white;
+    background-color: #6f046c;
+}
+
+.petworld, .back
+{
+	background-color: #6f046c;
+    border-radius: 5px;
+    color: white;
+}
+
+.pets p
+{
+  background-color: #de8ff2;
+  color: #4a0248;
+  border-radius: 10px;
+}

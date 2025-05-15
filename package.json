@@ -1,0 +1,10 @@
+{
+  "homepage": "https://suzannaaa.github.io/save-the-pets",
+  "scripts": {
+    "predeploy": "echo skipped",
+    "deploy": "gh-pages -d ."
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
