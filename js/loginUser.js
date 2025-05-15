@@ -1,3 +1,5 @@
+// loginUser.js
+
 document.addEventListener("DOMContentLoaded", function () {
   const token = localStorage.getItem("token");
 
@@ -26,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
     joingameSection.querySelectorAll(".btn-primary").forEach(btn => {
       btn.style.fontSize = "16px";
     });
-    // Add more styling changes for other elements as needed
   } else {
     // Token does not exist, user is not logged in
     loginContainer.classList.remove("d-none");
@@ -38,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
     joingameSection.querySelectorAll(".btn-primary").forEach(btn => {
       btn.style.fontSize = "";
     });
-    // Reset other styling changes for other elements as needed
   }
 
   const loginForm = document.getElementById("loginForm");
@@ -67,7 +67,14 @@ document.addEventListener("DOMContentLoaded", function () {
       // Store the token in local storage
       localStorage.setItem("token", responseData.token);
       // Redirect or perform further actions for logged-in user
-      window.location.href = "index.html";
+      const user_id = parseInt(responseData.user_id); // Assuming user_id is returned in responseData
+      console.log("user_id:", user_id);
+      if (user_id === 1) {
+        // Redirect the user to admin.html
+        window.location.href = "admin.html";
+      } else {
+        window.location.href = "index.html";
+      }
     } else {
       warningCard.classList.remove("d-none");
       warningText.innerText = responseData.message;

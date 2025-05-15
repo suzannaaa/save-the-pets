@@ -1,4 +1,5 @@
-// Declare buyBoxMethod globally
+// createPet.js
+
 function createPetMethod() {
   const data = {
     pet_num: pet_num,

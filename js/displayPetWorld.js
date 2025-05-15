@@ -1,3 +1,5 @@
+// displayPetWorld.js
+
 document.addEventListener("DOMContentLoaded", function () {
   const callback = (responseStatus, responseData) => {
     console.log("responseStatus:", responseStatus);
@@ -10,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
       displayItem.innerHTML = `
       <div class="card h-100">
         <div class="d-flex align-items-center justify-content-center" style="height: 100%;">
-          <img src="https://raw.githubusercontent.com/suzannaaa/PetShop/main/pets/${box.pet_num}.png" class="card-img-top" alt="Pokemon Image" style="max-width: 100%; max-height: 100%;">
+          <img src="https://raw.githubusercontent.com/suzannaaa/PetShop/main/pets/${box.pet_num}.png" class="card-img-top" alt="Pet Image" style="max-width: 100%; max-height: 100%;">
         </div>
         <div class="card-body">
           <h5 class="card-title">${box.pet_name}</h5>

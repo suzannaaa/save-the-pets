@@ -1,3 +1,5 @@
+// showAllPets.js
+
 const callback = (responseStatus, responseData) => {
   console.log("responseStatus:", responseStatus);
   console.log("responseData:", responseData);
@@ -14,7 +16,6 @@ const callback = (responseStatus, responseData) => {
         <div class="card-body">
           <h5 class="card-title">${pet.name}</h5>
           <p class="card-text">
-            Owner ID: ${pet.owner_id} <br>
             Rarity: ${pet.rarity} <br>
           </p>
         </div>
@@ -24,4 +25,4 @@ const callback = (responseStatus, responseData) => {
   });
 };
 
-fetchMethod(currentUrl + "/api/pets", callback, "GET", null, localStorage.getItem("token"));
+fetchMethod(currentUrl + "/api/pets/:id", callback, "GET", null, localStorage.getItem("token"));

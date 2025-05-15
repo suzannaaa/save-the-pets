@@ -1,13 +1,32 @@
+// showAllMessages.js
+
 togglePopup();
+
 function togglePopup() {
   var popup = document.getElementById("popup");
-  popup.style.display = (popup.style.display === "none") ? "flex" : "none";
+  var overlay = document.getElementById("overlay");
+
+  if (popup && overlay) {
+    if (popup.style.display === "none") {
+      popup.style.display = "flex";
+      overlay.style.display = "block";
+    } else {
+      popup.style.display = "none";
+      overlay.style.display = "none";
+    }
+  } else {
+    console.error("Popup or overlay element not found!");
+  }
 }
 
 function closePopup() {
   var popup = document.getElementById("popup");
+  var overlay = document.getElementById("overlay");
+
   popup.style.display = "none";
+  overlay.style.display = "none";
 }
+
 
 function fetchAndDisplayMessages() {
   const messageList = document.getElementById("messageList");
@@ -24,11 +43,10 @@ function fetchAndDisplayMessages() {
       displayItem.innerHTML = `
           <div class="card">
               <div class="card-body">
-                  <h5 class="card-title">Username: ${messages.username}</h5>
-                  <p class="card-text">
-                      Message: ${messages.message_text} <br>
+              <h5 class="card-title mb-3">Message:</h5>
+              <p class="card-text p-3" style="background-color: #f8dffa">${messages.message_text}</p>
+                      Created By: ${messages.username} <br>
                       Created At: ${messages.created_at} <br>
-                  </p>
               </div>
           </div>
           `;
@@ -46,12 +64,16 @@ submitButton.addEventListener("click", function () {
   const messageInput = document.getElementById("popupMessageInput").value;
 
   const data = {
-    message_text: messageInput,
+    message_text: messageInput
   };
 
-  fetchMethod(currentUrl + "/api/message", fetchAndDisplayMessages, "POST", data, localStorage.getItem("token"));
+  const successCallback = () => {
+    fetchAndDisplayMessages();
+    document.getElementById("popupMessageInput").value = '';
+    closePopup();
+  };
 
-  closePopup();
+  fetchMethod(currentUrl + "/api/message", successCallback, "POST", data, localStorage.getItem("token"));
 });
 
 fetchAndDisplayMessages();

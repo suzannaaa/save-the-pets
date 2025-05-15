@@ -1,3 +1,5 @@
+// registerUser.js
+
 document.addEventListener("DOMContentLoaded", function () {
   const signupForm = document.getElementById("signupForm");
   const warningCard = document.getElementById("warningCard");

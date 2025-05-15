@@ -1,3 +1,5 @@
+// showAllBox.js
+
 document.addEventListener("DOMContentLoaded", function () {
   const callback = (responseStatus, responseData) => {
     console.log("responseStatus:", responseStatus);

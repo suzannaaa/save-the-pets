@@ -1,3 +1,5 @@
+// queryCmds.js
+
 // Function to create the overlay div
 function createOverlay() {
   const overlay = document.createElement('div');
@@ -29,15 +31,15 @@ function createOverlay() {
 
   document.head.appendChild(style);
 
-  const loadingSVG = document.createElement('img');
-  loadingSVG.src = '../images/pokeball.svg';
-  loadingSVG.style.width = '50px';
-  loadingSVG.style.height = '50px';
-  loadingSVG.style.animation = 'spin 1s infinite linear';
-  loadingSVG.style.display = 'block';
-  loadingSVG.style.margin = 'auto';
+  const loadingImg = document.createElement('img');
+  loadingImg.src = 'https://raw.githubusercontent.com/suzannaaa/Pet-World/main/logo.png';
+  loadingImg.style.width = '70px';
+  loadingImg.style.height = '50px';
+  loadingImg.style.animation = 'spin 1s infinite linear';
+  loadingImg.style.display = 'block';
+  loadingImg.style.margin = 'auto';
   
-  container.appendChild(loadingSVG);
+  container.appendChild(loadingImg);
   container.appendChild(loadingText);
   overlay.appendChild(container);
   document.body.appendChild(overlay);
