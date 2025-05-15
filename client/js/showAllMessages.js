@@ -1,5 +1,6 @@
 // showAllMessages.js
 import currentUrl from "./getCurrentURL.js";
+import { fetchMethod } from './queryCmds.js';
 
 togglePopup();
 

@@ -1,5 +1,6 @@
 // registerUser.js
 import currentUrl from "./getCurrentURL.js";
+import { fetchMethod } from './queryCmds.js';
 
 document.addEventListener("DOMContentLoaded", function () {
   const signupForm = document.getElementById("signupForm");

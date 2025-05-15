@@ -1,5 +1,6 @@
 // showAllPets.js
 import currentUrl from "./getCurrentURL.js";
+import { fetchMethod } from './queryCmds.js';
 
 const callback = (responseStatus, responseData) => {
   console.log("responseStatus:", responseStatus);

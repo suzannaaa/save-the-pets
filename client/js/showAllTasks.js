@@ -1,5 +1,6 @@
 // showAllTasks.js
 import currentUrl from "./getCurrentURL.js";
+import { fetchMethod } from './queryCmds.js';
 
 function handleDoTaskButtonClick(taskId) {
   showDatePickerPopup((selectedDate) => {

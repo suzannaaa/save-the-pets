@@ -1,5 +1,6 @@
 // displayPoints.js
 import currentUrl from "./getCurrentURL.js";
+import { fetchMethod } from './queryCmds.js';
 
 function displayPoints() {
   const displayPointscallback = (responseStatus, responseData) => {

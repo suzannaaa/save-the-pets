@@ -1,5 +1,6 @@
 // showAllPetShop.js
 import currentUrl from "./getCurrentURL.js";
+import { fetchMethod } from './queryCmds.js';
 
 function closePopup() {
   const popup = document.querySelector(".popup");
