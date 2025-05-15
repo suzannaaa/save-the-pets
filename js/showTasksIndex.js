@@ -26,4 +26,4 @@ const displayTasksIndexCallback = (responseStatus, responseData) => {
   });
 };
 
-(currentUrl + "/api/tasks/index", displayTasksIndexCallback, "GET", null, localStorage.getItem("token"));
+fetchMethod(currentUrl + "/api/tasks/index", displayTasksIndexCallback, "GET", null, localStorage.getItem("token"));
