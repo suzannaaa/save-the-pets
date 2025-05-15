@@ -1,7 +1,7 @@
 {
   "scripts": {
     "test": "npm run init_tables && jest --forceExit",
-    "init_tables": "node src/configs/createSchema.js && node src/configs/initTables.js",
+    "init_tables": "node configs/createSchema.js && node configs/initTables.js",
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
