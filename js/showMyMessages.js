@@ -1,5 +1,6 @@
 // showMyMessages.js
 import currentUrl from "./getCurrentURL.js";
+import { fetchMethod } from './queryCmds.js';
 
 function fetchMessages() {
     console.log("Fetching messages...");

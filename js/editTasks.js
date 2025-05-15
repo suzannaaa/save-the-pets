@@ -1,5 +1,6 @@
 // editTasks.js
 import currentUrl from "./getCurrentURL.js";
+import { fetchMethod } from './queryCmds.js';
 
 // Function to fetch tasks from the server
 const fetchTasks = () => {

@@ -25,4 +25,5 @@ const displayTasksIndexCallback = (responseStatus, responseData) => {
   });
 };
 
-fetchMethod(currentUrl + "/api/tasks/index", displayTasksIndexCallback, "GET", null, localStorage.getItem("token"));
+import { fetchMethod } from './queryCmds.js';
+(currentUrl + "/api/tasks/index", displayTasksIndexCallback, "GET", null, localStorage.getItem("token"));

@@ -1,4 +1,5 @@
 // queryCmds.js
+export { fetchMethod };
 
 // Function to create the overlay div
 function createOverlay() {

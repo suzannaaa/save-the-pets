@@ -1,5 +1,6 @@
 // displayPetWorld.js
 import currentUrl from "./getCurrentURL.js";
+import { fetchMethod } from './queryCmds.js';
 
 document.addEventListener("DOMContentLoaded", function () {
   const callback = (responseStatus, responseData) => {

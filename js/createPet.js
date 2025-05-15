@@ -1,5 +1,6 @@
 // createPet.js
 import currentUrl from "./getCurrentURL.js";
+import { fetchMethod } from './queryCmds.js';
 
 function createPetMethod() {
   const data = {
