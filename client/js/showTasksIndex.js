@@ -1,5 +1,6 @@
 // showTasksIndex.js
 import currentUrl from "./getCurrentURL.js";
+import { fetchMethod } from './queryCmds.js';
 
 const displayTasksIndexCallback = (responseStatus, responseData) => {
   console.log("responseStatus:", responseStatus);
@@ -25,5 +26,4 @@ const displayTasksIndexCallback = (responseStatus, responseData) => {
   });
 };
 
-import { fetchMethod } from './queryCmds.js';
 (currentUrl + "/api/tasks/index", displayTasksIndexCallback, "GET", null, localStorage.getItem("token"));
