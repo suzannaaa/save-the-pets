@@ -1,4 +1,5 @@
 // showAllPetShop.js
+import currentUrl from "./getCurrentURL.js";
 
 function closePopup() {
   const popup = document.querySelector(".popup");

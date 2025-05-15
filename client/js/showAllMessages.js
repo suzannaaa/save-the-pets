@@ -1,4 +1,5 @@
 // showAllMessages.js
+import currentUrl from "./getCurrentURL.js";
 
 togglePopup();
 

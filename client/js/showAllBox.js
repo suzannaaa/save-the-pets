@@ -1,4 +1,5 @@
 // showAllBox.js
+import currentUrl from "./getCurrentURL.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   const callback = (responseStatus, responseData) => {

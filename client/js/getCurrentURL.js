@@ -6,3 +6,5 @@ const currentUrl = window.location.hostname.includes("localhost")
   : "https://save-the-pets.onrender.com";
 
 console.log("currentUrl:", currentUrl);
+
+export default currentUrl;
